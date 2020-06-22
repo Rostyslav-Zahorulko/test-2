@@ -1,15 +1,14 @@
-a {
-  color: blue;
+.schedule-body > tr:hover {
+  background-color: orange;
 }
 
-a:hover {
-  color: red;
+/* Оформление таблицы */
+.schedule {
+  border-collapse: collapse;
 }
 
-a:active {
-  color: aliceblue;
+.schedule th,
+.schedule td {
+  padding: 8px;
+  border: 1px solid #212121;
 }
-
-/* a:visited {
-  color: black;
-} */
