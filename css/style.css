@@ -1,14 +1,19 @@
-.schedule-body > tr:hover {
-  background-color: orange;
+p {
+  color: blue;
 }
 
-/* Оформление таблицы */
-.schedule {
-  border-collapse: collapse;
+p[class] {
+  color: green;
 }
 
-.schedule th,
-.schedule td {
-  padding: 8px;
-  border: 1px solid #212121;
+.section-text {
+  color: yellow;
+}
+
+.section > .section-text {
+  color: blueviolet;
+}
+
+.section .section-text {
+  color: brown;
 }
