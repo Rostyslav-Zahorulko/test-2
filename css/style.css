@@ -1,19 +1,7 @@
-p {
-  color: blue;
+.list-item {
+  margin-bottom: 12px;
 }
 
-p[class] {
-  color: green;
-}
-
-.section-text {
-  color: yellow;
-}
-
-.section > .section-text {
-  color: blueviolet;
-}
-
-.section .section-text {
-  color: brown;
+.list-item:last-child {
+  margin-bottom: 0;
 }
