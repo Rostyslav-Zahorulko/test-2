@@ -86,19 +86,27 @@ a = 5, b = 5
   font-weight: 700;
   line-height: 1.5;
 
+  color: teal;
+  background-color: tomato;
+
   overflow: hidden;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: red;
-  color: green;
+  color: tomato;
+  background-color: teal;
+}
+
+.wink,
+.evil {
+  transition: transform 250ms linear;
 }
 
 .wink {
   margin-right: 10px;
 
-  transition: transform 250ms linear;
+  fill: orange;
 }
 
 .btn:hover .wink,
@@ -109,8 +117,9 @@ a = 5, b = 5
 .evil {
   position: absolute;
 
+  fill: yellowgreen;
+
   transform: translateY(80px);
-  transition: transform 250ms linear;
 }
 
 .btn:hover .evil,
@@ -147,18 +156,22 @@ a = 5, b = 5
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
 }
 
-.button::after {
+.button::after,
+.button::before {
   content: '';
   display: block;
   width: 40px;
   height: 40px;
-  margin-left: 10px;
 
-  /* background-color: red; */
-  background-image: url(../images/svg/bird.svg);
   background-size: contain;
 
   transition: transform 250ms linear;
+}
+
+.button::after {
+  margin-left: 10px;
+
+  background-image: url(../images/svg/bird.svg);
 }
 
 .button:hover::after,
@@ -171,17 +184,9 @@ a = 5, b = 5
   top: 50%;
   right: 35px;
 
-  content: '';
-  display: block;
-  width: 40px;
-  height: 40px;
-
-  /* background-color: green; */
   background-image: url(../images/svg/cat.svg);
-  background-size: contain;
 
   transform: translateY(calc(-50% + 80px));
-  transition: transform 250ms linear;
 }
 
 .button:hover::before,
